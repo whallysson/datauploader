@@ -1,0 +1,33 @@
+{
+    "name": "codeblog/datauploader",
+    "description": "Easy PHP upload manager for files, images and media",
+    "keywords": [
+        "CodeBlog",
+        "datauploader",
+        "upload",
+        "uploader",
+        "image upload",
+        "file upload",
+        "media upload"
+    ],
+    "homepage": "http://www.codeblog.com.br",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Whallysson Avelino",
+            "email": "whallyssonallain@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "ext-exif": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeBlog\\DataUploader\\": "src"
+        }
+    }
+}
