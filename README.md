@@ -48,7 +48,7 @@ Para mais detalhes sobre como usar, veja uma pasta de exemplo no diretório do c
 <?php
 require __DIR__ . "/../vendor/autoload.php";
 
-$image = new CoffeeCode\Uploader\Image("uploads", "images");
+$image = new CodeBlog\DataUploader\Image("uploads", "images");
 
 if ($_FILES) {
     try {
@@ -66,7 +66,7 @@ if ($_FILES) {
 <?php
 require __DIR__ . "/../vendor/autoload.php";
 
-$file = new CoffeeCode\Uploader\File("uploads", "files");
+$file = new CodeBlog\DataUploader\File("uploads", "files");
 
 if ($_FILES) {
     try {
@@ -84,7 +84,7 @@ if ($_FILES) {
 <?php
 require __DIR__ . "/../vendor/autoload.php";
 
-$media = new CoffeeCode\Uploader\Media("uploads", "medias");
+$media = new CodeBlog\DataUploader\Media("uploads", "medias");
 
 if ($_FILES) {
     try {
