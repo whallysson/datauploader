@@ -30,6 +30,15 @@ class Image extends DataUploader {
     protected static $allowGIF = [
         "image/gif"
     ];
+    
+    /**
+     * Allow zip, rar, bzip, pdf, doc, docx files
+     * @var array allowed file types
+     * https://www.freeformatter.com/mime-types-list.html
+     */
+    protected static $allowTypes = [
+        
+    ];
 
     /**
      * @param array $image
