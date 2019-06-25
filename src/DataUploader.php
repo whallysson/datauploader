@@ -32,6 +32,13 @@ abstract class DataUploader {
         $this->dir("{$uploadDir}/{$fileTypeDir}");
         $this->path("{$uploadDir}/{$fileTypeDir}");
     }
+    
+    /**
+     * @return array
+     */
+    public static function isAllowed() {
+        return array_merge(static::$allowJPG, static::$allowPNG, static::$allowGIF, static::$allowTypes);
+    }
 
     /**
      * @param string $name
