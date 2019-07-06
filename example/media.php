@@ -3,7 +3,7 @@
     require __DIR__ . "/../src/Uploader.php";
     require __DIR__ . "/../src/Media.php";
 
-    $media = new CoffeeCode\Uploader\Media("uploads", "medias");
+    $media = new CodeBlog\DataUploader\Media("uploads", "medias");
 
     if ($_FILES) {
         try {
